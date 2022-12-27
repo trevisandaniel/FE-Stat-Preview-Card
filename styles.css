@@ -7,6 +7,30 @@
     --cor-neutral-mainParagraph: hsla(0, 0%, 100%, 0.75);
     --cor-neutral-statHeading: hsla(0, 0%, 100%, 0.6);
 }
+/*Mobile*/
+@media screen (max-width: 600px){
+    body{
+        background:red;
+        /*background-color: var(--cor-primary-mainBackground);*/
+        height: 100vh;
+        display: block;
+        place-items: center;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    .container{
+        background-color:red;
+        /*background-color: var(--cor-primary-cardBackground);*/
+        display: flex;
+        flex-direction:reverse-column;
+        height: 480px;
+        max-width: 375px;
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+
+
 body{
     background-color: var(--cor-primary-mainBackground);
     height: 100vh;
@@ -19,15 +43,17 @@ body{
 .container{
     background-color: var(--cor-primary-cardBackground);
     display: flex;
-    height: 500px;
+    height: 480px;
     max-width: 1440px;
     width: 100%;
+    border-radius: 15px;
 }
 .content{
     background-color: var(--cor-primary-cardBackground);
     color: var(--cor-neutral-white);
     width: 50%;
     text-align: start;
+    border-radius: 15px;
 }
 .text{
     width: 70%;
@@ -35,16 +61,25 @@ body{
     margin-top: 50px;
 }
 .numbers{
-    background-color: gray;
     width: 70%;
     margin:auto;
-    height: 200px;
+    margin-top: 60px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .numbers p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
     font-size: 18px;
+    margin-bottom: 0px;
+}
+.numbers span{
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: gray;
 }
 .content h1{
     color: var(--cor-neutral-mainParagraph);
@@ -54,11 +89,17 @@ body{
     color: var(--cor-primary-accent);
 }
 .img{
-    background-color: blue;
     width: 50%;
+    background: var(--cor-primary-accent);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow:hidden;
 }
 .img img{
     width: 100%;
     height:100%;
-    object-fit: fill;
+    object-fit: fit;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    opacity: 0.5;
 }
